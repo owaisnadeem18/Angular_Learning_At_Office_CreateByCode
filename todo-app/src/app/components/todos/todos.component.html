@@ -1,0 +1,9 @@
+
+<h2 class="text-center mt-5 mb-5" >
+    Todo List Created by Dev Owais In Angular 
+</h2>
+
+<app-add-todo></app-add-todo>
+<ul *ngFor="let todo of todos">
+   <app-todo-item  [todo] ="todo"  (todoDelete)="deleteTodo($event)"></app-todo-item>
+</ul>
